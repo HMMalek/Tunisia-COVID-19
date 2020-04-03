@@ -10,6 +10,8 @@ export default class DataTable extends React.Component {
           key={index}
           regionName={data.regionName}
           value={data.value}
+          value2={data.lat}
+          value3={data.lng}
           onEditRow={this.props.onEditRow}
           onDeleteRow={() => this.props.onDeleteRow(data.regionName, data.code)}
         />
@@ -28,9 +30,21 @@ export default class DataTable extends React.Component {
               toggleDirection={this.props.toggleDirection}
             />
             <SortableHeader
-              label="VALUE"
+              label="Confirmed Cases"
               sortState={this.props.sortState}
               sortKey="value"
+              toggleDirection={this.props.toggleDirection}
+            />
+            <SortableHeader
+              label="Confirmed recoveries"
+              sortState={this.props.sortState}
+              sortKey="value2"
+              toggleDirection={this.props.toggleDirection}
+            />
+            <SortableHeader
+              label="Confirmed deaths"
+              sortState={this.props.sortState}
+              sortKey="value3"
               toggleDirection={this.props.toggleDirection}
             />
           </tr>

@@ -7,17 +7,13 @@ export default class DataTableBox extends React.Component {
     return (
       <div className="data-table-box">
         <div className="data-table-box-outer">
-          <SelectBox
-            emptyRegions={this.props.emptyRegions}
-            onAddRow={this.props.onAddRow}
-          />
           <DataTable
             regionData={this.props.regionData}
             sortState={this.props.sortState}
             onEditRow={this.props.onEditRow}
             onDeleteRow={this.props.onDeleteRow}
             toggleDirection={this.props.toggleDirection}
-          />
+            />
         </div>
       </div>
     );

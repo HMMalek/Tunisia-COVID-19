@@ -33,14 +33,7 @@ export default class Navbar extends React.Component {
     return (
       <nav ref="navbar" className="navbar navbar-default navbar-fixed-top" style={navStyle}>
         <div className="container-fluid">
-          <div className="navbar-header">
-            <a className="navbar-brand" href="#">Simple DataMap</a>
-          </div>
-
-            <a href="https://github.com/caspg/simple-data-table-map" className="github-repo-link navbar-link">
-              <span className="glyphicon glyphicon-star"></span>
-              github
-            </a>
+          <h2>TUNISIA - COVID STATS</h2>
         </div>
       </nav>
     );
