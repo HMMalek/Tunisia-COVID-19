@@ -2,7 +2,7 @@ $red: #B71C1C;
 $green: #4CAF50;
 $outline-blue: #08c;
 
-$borderStyle: 1px solid #ddd;
+$borderStyle: 2px solid #ddd;
 
 @import 'styles/select_box';
 
@@ -13,7 +13,7 @@ body {
 .navbar {
   border-radius: 0;
   height: 60px;
-  background: rgba(239, 239, 255, 0.9);
+  background: #c2d6d6;
   padding: 0 30px;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .datamap-outer-conainer {
   padding: 25;
-  margin-left: 1%;
+
 
   #datamap-container {
     position: relative;
@@ -33,7 +33,7 @@ body {
 
 .data-table-box {
   padding: 0 15px;
-  margin-left: 40%;
+  margin-left: 25%;
   margin-top: -15%;
 
   .data-table-box-outer {
@@ -47,7 +47,9 @@ table {
   border-collapse: collapse;
 
   th {
-    border: $borderStyle;
+
+    border-radius: 15px;
+    background-color: #c2d6d6;
     padding: 5px 15px;
     font-weight: bold;
     cursor: pointer;
@@ -63,7 +65,8 @@ table {
   }
 
   td {
-    border: $borderStyle;
+    border-radius: 15px;
+    background-color: #f0f5f5;
     width: 45%;
     height: 35px;
     text-align: start;
