@@ -2,7 +2,7 @@ const statesData = [
   { 'regionName':'Tozeur','code':'TN.TO', 'value': 89 },
   { 'regionName':'Manubah','code':'TN.MN', 'value': 112 },
   { 'regionName':'Béja','code':'TN.BJ', 'value': 101 },
-  { 'regionName':'Ben Arous (Tunis Sud)','code':'TN.BA', 'value': 123 },
+  { 'regionName':'Ben Arous','code':'TN.BA', 'value': 123 },
   { 'regionName':'Bizerte','code':'TN.BZ', 'value': 145 },
   { 'regionName':'Jendouba','code':'TN.JE', 'value': 98 },
   { 'regionName':'Nabeul','code':'TN.NB', 'value': 101 },
