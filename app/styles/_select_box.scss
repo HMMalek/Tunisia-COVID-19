@@ -1,18 +1,12 @@
 .select-box-container {
   display: flex;
-  margin-bottom: 20px;
-
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-  text-align: start;
+ margin-top: 4%;
 
   .column {
     display: inline-block;
     width: 45%;
     height: 36px;
-
+   margin-top: -108%;
     &:last-of-type {
       width: 10%;
     }

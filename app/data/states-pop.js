@@ -1,5 +1,5 @@
 const statesData = [
-  { 'regionName':'Tozeur','code':'TN.TO', 'value': 89 },
+  { 'regionName':'Tozeur','code':'TN.TO', 'value': 89, 'lat': 15 },
   { 'regionName':'Manubah','code':'TN.MN', 'value': 112 },
   { 'regionName':'Béja','code':'TN.BJ', 'value': 101 },
   { 'regionName':'Ben Arous','code':'TN.BA', 'value': 123 },
@@ -15,7 +15,7 @@ const statesData = [
   { 'regionName':'Sfax','code':'TN..SF', 'value': 94 },
   { 'regionName':'Siliana','code':'TN.SL', 'value': 106 },
   { 'regionName':'Mahdia','code':'TN.MH', 'value': 116 },
-  { 'regionName':'Monastir','code':'TN.MS', 'value': 122 },
+  { 'regionName':'Monastir','code':'TN.MS', 'value': 122},
   { 'regionName':'Kairouan','code':'TN.KR', 'value': 99 },
   { 'regionName':'Sousse','code':'TN.SS', 'value': 100 },
   { 'regionName':'Zaghouan','code':'TN.ZA', 'value': 101 },

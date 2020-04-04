@@ -7,7 +7,7 @@ $borderStyle: 2px solid #ddd;
 @import 'styles/select_box';
 
 body {
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 .navbar {
@@ -34,7 +34,6 @@ body {
 .data-table-box {
   padding: 0 15px;
   margin-left: 25%;
-  margin-top: -15%;
 
   .data-table-box-outer {
     max-width: 650px;
@@ -100,4 +99,7 @@ table {
   tr:hover .remove-btn {
     opacity: 1;
   }
+}
+#deleteColumn{
+  background-color: #white;
 }
