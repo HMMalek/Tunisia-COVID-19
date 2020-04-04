@@ -1,5 +1,5 @@
 # TUNISIA COVID-19
-A simple graphical representation of the evolution of the COVID-19 cases in TUNISIA
+A simple graphical representation of the evolution of the COVID-19 cases in TUNISIA <br/>
 the project is based on the simple-data-table-map project:
 http://caspg.github.io/simple-data-table-map/
 
