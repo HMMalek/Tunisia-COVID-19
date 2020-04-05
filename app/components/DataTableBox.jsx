@@ -6,7 +6,6 @@ export default class DataTableBox extends React.Component {
   render() {
     return (
       <div className="data-table-box">
-        <div className="data-table-box-outer">
          <SelectBox
             emptyRegions={this.props.emptyRegions}
             onAddRow={this.props.onAddRow}
@@ -18,7 +17,6 @@ export default class DataTableBox extends React.Component {
             onDeleteRow={this.props.onDeleteRow}
             toggleDirection={this.props.toggleDirection}
             />
-        </div>
       </div>
     );
   }

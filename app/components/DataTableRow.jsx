@@ -17,13 +17,7 @@ export default class DataTableRow extends React.Component {
             onBlur={this.handleInputBlur.bind(this)}
           />
         </td>
-        <td>
-          {this.props.lat}
-        </td>
-        <td>
-          {this.props.lng}
-        </td>
-        <td id="deleteColumn">
+        <td >
           <span
             className="glyphicon glyphicon-remove remove-btn"
             onClick={this.props.onDeleteRow}

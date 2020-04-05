@@ -7,71 +7,93 @@ $borderStyle: 2px solid #ddd;
 @import 'styles/select_box';
 
 body {
-  margin-top: 5px;
-}
 
-.navbar {
-  border-radius: 0;
-  height: 60px;
-  background: #c2d6d6;
-  padding: 0 30px;
-}
-
-.navbar-header {
-  display: inline-block;
-}
-
-
-.datamap-outer-conainer {
-  padding: 25;
-
-
-  #datamap-container {
-    position: relative;
+  .navbar {
+    border-radius: 0;
+    height: 5%;
+    background: #8cd98c;
+    padding: 0 3%;
   }
+
+  .navbar-header {
+    display: inline-block;
+  }
+
+  #mainLayout{
+   width: 70%;
+   height: 70%;
+   margin-left: 1%;
+   margin-top: 5%;
+   border-collapse: collapse;
+
+   #MapColumn{
+     width: 15%;
+
+     .datamap-container {
+         margin-top: -90%;
+     }
+
+     #generalInfoTable{
+       margin-bottom: 5%;
+       width: 50%;
+       height: 15%;
+       margin-left: 18%;
+       tr{
+
+       }
+       th{
+        font-weight: bold;
+        font-style: italic;
+        .cases{ background-color: red;   }
+       }
+     }
+    }
+
+   #TableColumn{
+     width: 40%;
+    }
+  }
+
 }
+
 
 .data-table-box {
-  padding: 0 15px;
-  margin-left: 25%;
+  width: 150%;
+  padding: 0 3%;
 
-  .data-table-box-outer {
-    max-width: 650px;
-  }
 }
 
-table {
-  width: 100%;
-  margin-top: -100%;
+#dataTable{
+  margin-top: 1%;
+  width: 60%;
   border-collapse: collapse;
-
   th {
-
     border-radius: 15px;
-    background-color: #c2d6d6;
-    padding: 5px 15px;
+    height: 10%;
+    background-color: #8cd98c;
+    padding: 2% 3%;
     font-weight: bold;
     cursor: pointer;
     text-align: left;
 
     h4 {
+      font-weight: bold;
       display: inline-block;
     }
 
     .glyphicon {
-      margin-left: 20px;
+      margin-left: 2%;
     }
   }
 
   td {
     border-radius: 15px;
-    background-color: #f0f5f5;
-    width: 45%;
-    height: 35px;
+    width: 25%;
+    height: 25%;
     text-align: start;
 
     &:first-of-type {
-      padding: 10px 15px;
+      padding: 1% 3%;
     }
 
     &:last-of-type {
@@ -81,15 +103,18 @@ table {
   }
 
   input {
-    border: none;
+    text-align: center;
+    border-radius: 15px;
+    border-style: inherit;
     width: 100%;
     height: 100%;
-    padding-left: 15px;
+    padding-left: 3%;
+    background-color: inherit;
   }
 
   .remove-btn {
     margin-left: 10px;
-    padding: 10px;
+    padding:15%;
     color: $red;
     opacity: 0;
     cursor: pointer;
@@ -99,7 +124,5 @@ table {
   tr:hover .remove-btn {
     opacity: 1;
   }
-}
-#deleteColumn{
-  background-color: #white;
+
 }

@@ -16,7 +16,7 @@ export default class DataMap extends React.Component {
     const dataValues = this.props.regionData.map(function(data) { return data.value });
     const minVal = Math.min(...dataValues);
     const maxVal = Math.max(...dataValues);
-    return d3.scale.linear().domain([minVal, maxVal]).range(["#EFEFFF","#02386F"])(value);
+    return d3.scale.linear().domain([minVal, maxVal]).range(["#ffebe6","#ff3300"])(value);
   }
   redducedData(){
     const newData = this.props.regionData.reduce((object, data) => {
@@ -26,14 +26,15 @@ export default class DataMap extends React.Component {
     return objectAssign({}, statesDefaults, newData);
   }
   renderMap(){
-    return new Datamap({
+
+     var Themap = new Datamap({
       element: ReactDOM.findDOMNode(this),
       scope: 'tun',
       data: this.redducedData(),
       setProjection: function(element) {
       var projection = d3.geo.equirectangular()
       .center([10, 35])
-      .scale(4000)
+      .scale(4900)
       .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
        var path = d3.geo.path()
       .projection(projection);
@@ -51,6 +52,9 @@ export default class DataMap extends React.Component {
         }
       }
     });
+
+  return Themap;
+
   }
   currentScreenWidth(){
     return window.innerWidth ||
@@ -62,30 +66,10 @@ export default class DataMap extends React.Component {
     const initialScreenWidth = this.currentScreenWidth();
     const containerWidth = (initialScreenWidth < 600) ?
       { width: initialScreenWidth + 'px',  height: (initialScreenWidth * 0.5625) + 'px' } :
-      { width: '500px', height: '750px' }
-
+      { width: '120%', height: '80%' }
     mapContainer.style(containerWidth);
     this.datamap = this.renderMap();
-    window.addEventListener('resize', () => {
-      const currentScreenWidth = this.currentScreenWidth();
-      const mapContainerWidth = mapContainer.style('width');
-      if (this.currentScreenWidth() > 600 && mapContainerWidth !== '600px') {
-        d3.select('svg').remove();
-        mapContainer.style({
-          width: '500px',
-          height: '350px'
-        });
-        this.datamap = this.renderMap();
-      }
-      else if (this.currentScreenWidth() <= 600) {
-        d3.select('svg').remove();
-        mapContainer.style({
-          width: currentScreenWidth + 'px',
-          height: (currentScreenWidth * 0.5625) + 'px'
-        });
-        this.datamap = this.renderMap();
-      }
-    });
+
   }
   componentDidUpdate(){
     this.datamap.updateChoropleth(this.redducedData());

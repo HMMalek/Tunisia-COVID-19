@@ -1,14 +1,14 @@
 .select-box-container {
   display: flex;
- margin-top: 4%;
+
 
   .column {
     display: inline-block;
-    width: 45%;
-    height: 36px;
-   margin-top: -108%;
+    width: 25%;
+    height: 35px;
+
     &:last-of-type {
-      width: 10%;
+      width: 6%;
     }
   }
 
@@ -44,7 +44,7 @@
   }
 
   .add-button {
-    margin-left: 10px;
+    margin-left: 5%;
     padding: 10px;
     color: $green;
     border: none;

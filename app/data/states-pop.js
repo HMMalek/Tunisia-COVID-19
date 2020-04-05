@@ -1,5 +1,5 @@
 const statesData = [
-  { 'regionName':'Tozeur','code':'TN.TO', 'value': 89, 'lat': 15 },
+  { 'regionName':'Tozeur','code':'TN.TO', 'value': 89},
   { 'regionName':'Manubah','code':'TN.MN', 'value': 112 },
   { 'regionName':'Béja','code':'TN.BJ', 'value': 101 },
   { 'regionName':'Ben Arous','code':'TN.BA', 'value': 123 },

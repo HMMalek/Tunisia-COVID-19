@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux'
 import { editRow, deleteRow, addRow, toggleDirection } from '../actions';
+import statesData from '../data/states-pop';
 
 import DataMap from '../components/DataMap';
 import DataTableBox from '../components/DataTableBox';
@@ -27,21 +28,35 @@ class App extends React.Component {
     this.props.dispatch(toggleDirection(newSortKey));
   }
   render() {
+    var totalNumber = statesData[0].value;
     return (
       <div>
         <Navbar />
-        <div className="datamap-outer-conainer">
-          <DataMap regionData={this.props.regionData} />
-        </div>
-        <DataTableBox
-          regionData={this.props.regionData}
-          emptyRegions={this.props.emptyRegions}
-          sortState={this.props.sortState}
-          onEditRow={this.handleEditRow}
-          onDeleteRow={this.handleDeleteRow}
-          onAddRow={this.handleAddRow}
-          toggleDirection={this.handleToggleDirection}
-        />
+        <table id="mainLayout">
+          <th id="MapColumn">
+            <table id="generalInfoTable">
+
+               <tr><th id="cases">Total Confirmed</th><td>{totalNumber}</td></tr>
+
+               <tr> <th>Total Deaths</th><td>{totalNumber}</td></tr>
+
+               <tr> <th>Total Recoveries</th><td>{totalNumber}</td></tr>
+
+           </table>
+           <DataMap regionData={this.props.regionData} /> </th>
+          <th id="TableColumn">
+            <DataTableBox
+              regionData={this.props.regionData}
+              emptyRegions={this.props.emptyRegions}
+              sortState={this.props.sortState}
+              onEditRow={this.handleEditRow}
+              onDeleteRow={this.handleDeleteRow}
+              onAddRow={this.handleAddRow}
+              toggleDirection={this.handleToggleDirection}
+              />
+            </th>
+            <th>  </th>
+        </table>
       </div>
     );
   }
