@@ -1,11 +1,14 @@
 {
-  "name": "simple-data-table-map",
+  "name": "TunisiaCovid",
+  "homepage": "http://HMMalek.github.io/TunisiaCovid19",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d",
-    "build": "webpack -p --config webpack.config.prod.js"
+    "build": "webpack -p --config webpack.config.prod.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
   "license": "ISC",
@@ -24,7 +27,8 @@
     "style-loader": "^0.13.0",
     "topojson": "^1.6.20",
     "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1"
+    "webpack-dev-server": "^1.14.1",
+    "gh-pages": "^2.2.0"
   },
   "dependencies": {
     "react": "^0.14.6",
