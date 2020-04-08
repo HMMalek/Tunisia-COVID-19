@@ -9,7 +9,7 @@ $borderStyle: 2px solid #ddd;
 body {
   .navbar {
     border-radius: 0;
-    height: 5%;
+    height: 8%;
     background-color: #0000A0	;
     color: white;
     padding: 0 3%;
@@ -21,23 +21,21 @@ body {
 
   }
   #datediv{
-    align-items: center;
-    font-size: 35px;
-    margin-top: 10%;
-    margin-left: 15%;
+    font-size: 30px;
+    margin-top: 8%;
+    margin-left: 3%;
     color: #0000A0;
 
   }
   #mainLayout{
    width: 70%;
    height: 70%;
-   margin-left: 10%;
-   margin-top: -5%;
+   margin-top: -8%;
    border-collapse: collapse;
 
    #TotConfirmedTable,#TotDeathsTable,#TotRecoveriesTable{
      margin-bottom: 3%;
-     width: 50%;
+     width: 60%;
      height: 50px;
      font-size: 20px;
      margin-left: 18%;
@@ -78,11 +76,9 @@ body {
 
 }
 
-
 .data-table-box {
   width: 150%;
   padding: 0 3%;
-
 }
 
 #dataTable{
@@ -91,7 +87,6 @@ body {
   border-collapse: collapse;
   th {
     font-size: 20px;
-    border-radius: 15px;
     height: auto;
     padding: 2% 3%;
     font-weight: bold;

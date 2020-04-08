@@ -34,7 +34,7 @@ export default class DataMap extends React.Component {
       setProjection: function(element) {
       var projection = d3.geo.equirectangular()
       .center([10, 35])
-      .scale(4900)
+      .scale(5500)
       .translate([element.offsetWidth / 2, element.offsetHeight / 2]);
        var path = d3.geo.path()
       .projection(projection);
@@ -66,7 +66,7 @@ export default class DataMap extends React.Component {
     const initialScreenWidth = this.currentScreenWidth();
     const containerWidth = (initialScreenWidth < 600) ?
       { width: initialScreenWidth + 'px',  height: (initialScreenWidth * 0.5625) + 'px' } :
-      { width: '110%', height: '100%' }
+      { width: '120%', height: '100%' }
     mapContainer.style(containerWidth);
     this.datamap = this.renderMap();
 
