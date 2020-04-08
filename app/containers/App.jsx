@@ -10,6 +10,11 @@ import Navbar from '../components/Navbar';
 class App extends React.Component {
   constructor(props){
     super(props);
+     var today = new Date(),
+           date = today.getFullYear() + '/' + (today.getMonth() + 1) + '/' + today.getDate();
+       this.state = {
+           date: date
+       };
     this.handleEditRow = this.handleEditRow.bind(this);
     this.handleDeleteRow = this.handleDeleteRow.bind(this);
     this.handleAddRow = this.handleAddRow.bind(this);
@@ -32,17 +37,20 @@ class App extends React.Component {
     return (
       <div>
         <Navbar />
+        <div id="datediv">First case: 2020/3/1 <br/> Today is: {this.state.date} </div>
         <table id="mainLayout">
+         <th>
+         <table id="TotConfirmedTable">
+           <tr><th id="cases">Total Confirmed</th><td>{totalNumber}</td></tr>
+         </table>
+         <table id="TotDeathsTable">
+            <tr> <th>Total Deaths</th><td>{totalNumber}</td></tr>
+         </table>
+         <table id="TotRecoveriesTable">
+            <tr> <th>Total Recoveries</th><td>{totalNumber}</td></tr>
+        </table>
+         </th>
           <th id="MapColumn">
-            <table id="generalInfoTable">
-
-               <tr><th id="cases">Total Confirmed</th><td>{totalNumber}</td></tr>
-
-               <tr> <th>Total Deaths</th><td>{totalNumber}</td></tr>
-
-               <tr> <th>Total Recoveries</th><td>{totalNumber}</td></tr>
-
-           </table>
            <DataMap regionData={this.props.regionData} /> </th>
           <th id="TableColumn">
             <DataTableBox

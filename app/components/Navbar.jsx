@@ -33,7 +33,7 @@ export default class Navbar extends React.Component {
     return (
       <nav ref="navbar" className="navbar navbar-default navbar-fixed-top" style={navStyle}>
         <div className="container-fluid">
-          <h2>TUNISIA - COVID STATS</h2>
+          <h2>TUNISIA - COVID 19 STATS</h2>
         </div>
       </nav>
     );

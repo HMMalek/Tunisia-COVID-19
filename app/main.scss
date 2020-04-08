@@ -7,45 +7,67 @@ $borderStyle: 2px solid #ddd;
 @import 'styles/select_box';
 
 body {
-
   .navbar {
     border-radius: 0;
     height: 5%;
-    background: #8cd98c;
+    background-color: #0000A0	;
+    color: white;
     padding: 0 3%;
   }
 
   .navbar-header {
     display: inline-block;
-  }
+    font-size: 15px;
 
+  }
+  #datediv{
+    align-items: center;
+    font-size: 35px;
+    margin-top: 10%;
+    margin-left: 15%;
+    color: #0000A0;
+
+  }
   #mainLayout{
    width: 70%;
    height: 70%;
-   margin-left: 1%;
-   margin-top: 5%;
+   margin-left: 10%;
+   margin-top: -5%;
    border-collapse: collapse;
 
-   #MapColumn{
-     width: 15%;
-
-     .datamap-container {
-         margin-top: -90%;
-     }
-
-     #generalInfoTable{
-       margin-bottom: 5%;
-       width: 50%;
-       height: 15%;
-       margin-left: 18%;
-       tr{
-
-       }
+   #TotConfirmedTable,#TotDeathsTable,#TotRecoveriesTable{
+     margin-bottom: 3%;
+     width: 50%;
+     height: 50px;
+     font-size: 20px;
+     margin-left: 18%;
+     color: white;
+    }
+     #TotConfirmedTable{
+       background-color: 	#808080;
        th{
         font-weight: bold;
         font-style: italic;
-        .cases{ background-color: red;   }
        }
+     }
+     #TotDeathsTable{
+       background-color: red;
+       th{
+        font-weight: bold;
+        font-style: italic;
+       }
+     }
+     #TotRecoveriesTable{
+       background-color: $green;
+       th{
+        font-weight: bold;
+        font-style: italic;
+       }
+     }
+
+   #MapColumn{
+     width: 27%;
+     .datamap-container {
      }
     }
 
@@ -68,13 +90,15 @@ body {
   width: 60%;
   border-collapse: collapse;
   th {
+    font-size: 20px;
     border-radius: 15px;
-    height: 10%;
-    background-color: #8cd98c;
+    height: auto;
     padding: 2% 3%;
     font-weight: bold;
     cursor: pointer;
     text-align: left;
+    color: #0000A0;
+
 
     h4 {
       font-weight: bold;

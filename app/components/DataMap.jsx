@@ -66,7 +66,7 @@ export default class DataMap extends React.Component {
     const initialScreenWidth = this.currentScreenWidth();
     const containerWidth = (initialScreenWidth < 600) ?
       { width: initialScreenWidth + 'px',  height: (initialScreenWidth * 0.5625) + 'px' } :
-      { width: '120%', height: '80%' }
+      { width: '120%', height: '100%' }
     mapContainer.style(containerWidth);
     this.datamap = this.renderMap();
 
