@@ -1,14 +1,14 @@
 {
   "name": "TunisiaCovid",
-  "homepage": "http://HMMalek.github.io/TunisiaCovid19",
+  "homepage": "http://HMMalek.github.io/Tunisia-COVID-19",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server -d",
     "build": "webpack -p --config webpack.config.prod.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,7 @@
     "css-loader": "^0.23.1",
     "d3": "^3.5.13",
     "datamaps": "^0.4.2",
+    "gh-pages": "^2.2.0",
     "node-sass": "^4.13.1",
     "object-assign": "^4.0.1",
     "react-select": "^0.9.1",
@@ -27,8 +28,7 @@
     "style-loader": "^0.13.0",
     "topojson": "^1.6.20",
     "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1",
-    "gh-pages": "^2.2.0"
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "react": "^0.14.6",

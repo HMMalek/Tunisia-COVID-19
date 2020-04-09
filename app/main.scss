@@ -10,7 +10,7 @@ body {
   .navbar {
     border-radius: 0;
     height: 8%;
-    background-color: #0000A0	;
+    background-color: red	;
     color: white;
     padding: 0 3%;
   }
@@ -21,24 +21,23 @@ body {
 
   }
   #datediv{
-    font-size: 30px;
+    font-size: 25px;
     margin-top: 8%;
+    font-weight: bold;
     margin-left: 3%;
-    color: #0000A0;
-
   }
   #mainLayout{
-   width: 70%;
+   width: 100%;
    height: 70%;
-   margin-top: -8%;
+   margin-top: -7%;
    border-collapse: collapse;
+
 
    #TotConfirmedTable,#TotDeathsTable,#TotRecoveriesTable{
      margin-bottom: 3%;
      width: 60%;
      height: 50px;
      font-size: 20px;
-     margin-left: 18%;
      color: white;
     }
      #TotConfirmedTable{
@@ -64,7 +63,7 @@ body {
      }
 
    #MapColumn{
-     width: 27%;
+     width: 30%;
      .datamap-container {
      }
     }
@@ -92,7 +91,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     text-align: left;
-    color: #0000A0;
+    color: red;
 
 
     h4 {
