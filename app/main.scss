@@ -7,6 +7,12 @@ $borderStyle: 2px solid #ddd;
 @import 'styles/select_box';
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   .navbar {
     border-radius: 0;
     height: 8%;
@@ -17,49 +23,34 @@ body {
 
   .navbar-header {
     display: inline-block;
-    font-size: 15px;
-
   }
+
   #datediv{
     font-size: 25px;
     margin-top: 8%;
-    font-weight: bold;
     margin-left: 3%;
   }
   #mainLayout{
    width: 100%;
    height: 70%;
-   margin-top: -7%;
+   margin-top: -12%;
    border-collapse: collapse;
-
+   font-size: 25px;
 
    #TotConfirmedTable,#TotDeathsTable,#TotRecoveriesTable{
      margin-bottom: 3%;
      width: 60%;
      height: 50px;
-     font-size: 20px;
      color: white;
     }
      #TotConfirmedTable{
        background-color: 	#808080;
-       th{
-        font-weight: bold;
-        font-style: italic;
-       }
      }
      #TotDeathsTable{
        background-color: red;
-       th{
-        font-weight: bold;
-        font-style: italic;
-       }
      }
      #TotRecoveriesTable{
        background-color: $green;
-       th{
-        font-weight: bold;
-        font-style: italic;
-       }
      }
 
    #MapColumn{
@@ -85,17 +76,17 @@ body {
   width: 60%;
   border-collapse: collapse;
   th {
-    font-size: 20px;
+    //font-size: 20px;
     height: auto;
     padding: 2% 3%;
-    font-weight: bold;
     cursor: pointer;
     text-align: left;
     color: red;
 
 
     h4 {
-      font-weight: bold;
+      font-size: 25px;
+
       display: inline-block;
     }
 
@@ -105,6 +96,7 @@ body {
   }
 
   td {
+    font-size: 20px;
     border-radius: 15px;
     width: 25%;
     height: 25%;

@@ -37,7 +37,9 @@ class App extends React.Component {
     return (
       <div>
         <Navbar />
-        <div id="datediv">First case: 2020/3/1 <br/> Today is: {this.state.date} </div>
+        <div id="datediv">First case: 2020/3/1 <br/> <br/>
+        Today is: {this.state.date} <br/> <br/>
+        Last update: 2020/x/xx </div>
         <table id="mainLayout">
           <th id="MapColumn">
            <DataMap regionData={this.props.regionData} />
