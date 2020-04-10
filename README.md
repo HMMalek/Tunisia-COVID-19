@@ -1,5 +1,5 @@
 # TUNISIA COVID-19
-A simple graphical representation of the evolution of the COVID-19 cases in TUNISIA https://hmmalek.github.io/Tunisia-COVID-19/ <br/>
+A simple graphical representation of the evolution of the COVID-19 cases in TUNISIA accessible though: https://hmmalek.github.io/Tunisia-COVID-19/ <br/>
 the project is based on the simple-data-table-map project:
 http://caspg.github.io/simple-data-table-map/
 
